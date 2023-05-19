@@ -1,0 +1,242 @@
+:root {
+  --primary: #42446e;
+  --seccondary: #666666;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  height: 3000px;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+p{
+    color: var(--seccondary);
+}
+
+nav {
+  display: flex;
+  background-color: #ffff;
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+}
+
+nav .logo {
+  margin-top: 7px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: var(--seccondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+/* Hamburger menu */
+.menu-togle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+.menu-togle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menu-togle input {
+  position: absolute;
+  width: 45px;
+  height: 25px;
+  left: -8px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* animasi hamburger */
+
+.menu-togle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-togle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-togle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-togle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-togle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+/* Hero section */
+
+section .container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10rem;
+}
+
+section .container h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  line-height: 60px;
+}
+
+section .container p {
+  color: var(--seccondary);
+}
+
+section .container button {
+  margin-top: 2rem;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  background-color: var(--primary);
+  color: #ffff;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  align-items: center;
+  font-weight: 600;
+}
+section .container button img {
+  width: 1rem;
+}
+
+/* About Me */
+.about-container {
+  padding: 8rem;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+.about-container .about-title {
+  padding: 1rem 0;
+}
+
+.about-container p {
+  color: var(--seccondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsif Breakpoints */
+
+/* ukuran tablet */
+@media Screen and (max-width: 768px) {
+  nav ul {
+    width: 60%;
+  }
+}
+
+/* Ukuran Mobile */
+@media Screen and (max-width: 776px) {
+  nav ul {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    top: 5rem;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    border-radius: 0 0 0 20px;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    background-color: rgb(255, 255, 255);
+  }
+
+  nav ul.slide {
+    transform: translateX(0);
+  }
+
+  .menu-togle {
+    display: flex;
+  }
+
+  section .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  section .container .hero-title {
+    padding: 2rem;
+  }
+
+  .about-container {
+    padding: 1rem;
+    text-align: center;
+  }
+}
