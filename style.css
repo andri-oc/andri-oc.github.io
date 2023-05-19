@@ -20,8 +20,8 @@ h1 {
   color: var(--primary);
 }
 
-p{
-    color: var(--seccondary);
+p {
+  color: var(--seccondary);
 }
 
 nav {
@@ -160,38 +160,37 @@ section .container button img {
   color: var(--seccondary);
 }
 
+/* Skill section */
 
+.header-skill h1 {
+  padding-top: 5rem;
+  font-size: 2rem;
+}
+.skill-container {
+  margin: 2rem;
+  text-align: center;
+}
 
+.skill-icon {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  display: flex;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container-icon img {
+  align-items: center;
+  margin: auto;
+  width: 100px;
+}
 
 /* responsif Breakpoints */
 
@@ -199,6 +198,11 @@ section .container button img {
 @media Screen and (max-width: 768px) {
   nav ul {
     width: 60%;
+  }
+
+  section .container {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -227,16 +231,38 @@ section .container button img {
     display: flex;
   }
 
+  /* Hero section */
   section .container {
     flex-direction: column-reverse;
     align-items: center;
   }
+
+  section .container img {
+    width: 300px;
+  }
+
+  section .container h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
   section .container .hero-title {
     padding: 2rem;
   }
 
   .about-container {
-    padding: 1rem;
+    padding: 4rem 1rem;
     text-align: center;
+  }
+
+  /* Skill */
+
+  .container-icon {
+    width: 30%;
+    flex-wrap: wrap;
+  }
+
+  .container-icon img {
+    width: 50%;
   }
 }
