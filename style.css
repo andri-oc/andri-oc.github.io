@@ -10,6 +10,11 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: var(--seccondary);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -114,6 +119,7 @@ section .container {
   display: flex;
   justify-content: space-evenly;
   padding-top: 10rem;
+  align-items: center;
 }
 
 section .container h1 {
@@ -122,11 +128,8 @@ section .container h1 {
   line-height: 60px;
 }
 
-section .container p {
-  color: var(--seccondary);
-}
-
-section .container button {
+section .container .btn {
+  cursor: pointer;
   margin-top: 2rem;
   padding: 0.5rem 2.5rem;
   border: none;
@@ -192,6 +195,61 @@ section .container button img {
   width: 100px;
 }
 
+/* section project */
+.header-project {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.header-project h1 {
+  font-size: 2rem;
+}
+
+.card-project h4 {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.project-container {
+  padding:  0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-project {
+  margin-top: 3rem;
+  width: 360px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 90px;
+}
+
+.card-project h4,
+.capt, a {
+  margin: 0.5rem 1.5rem;
+}
+
+.card-project .link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card-project .link a{
+    color: var(--seccondary);
+    padding-top: 1rem;
+    text-decoration:underline;
+}
+
+.card-project img {
+  width: 360px;
+  object-fit: cover;
+}
+
+
+
 /* responsif Breakpoints */
 
 /* ukuran tablet */
@@ -250,6 +308,9 @@ section .container button img {
     padding: 2rem;
   }
 
+  section .container .btn {
+    display: inline;
+  }
   .about-container {
     padding: 4rem 1rem;
     text-align: center;
