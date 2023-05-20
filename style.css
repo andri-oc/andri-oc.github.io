@@ -28,7 +28,9 @@ h1 {
 p {
   color: var(--seccondary);
 }
-
+section {
+    margin: 3rem 0;
+}
 nav {
   display: flex;
   background-color: #ffff;
@@ -437,6 +439,13 @@ footer span {
     padding: 4rem 1rem;
     text-align: center;
   }
+  /* About */
+
+  .education-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
 
   /* Skill */
 
@@ -472,4 +481,6 @@ footer span {
     justify-content: center;
     margin-left: 1rem;
   }
+
+
 }
