@@ -163,6 +163,29 @@ section .container button img {
   color: var(--seccondary);
 }
 
+.header-education h1 {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    color: var(--seccondary);
+}
+
+.education-detail span {
+    padding: 2px 20px;
+    border-radius: 20px;
+    background-color: #cec8f4;
+}
+.education-container img {
+    width: 15px;
+    margin-right:1rem;
+}
+
 /* Skill section */
 
 .header-skill h1 {
@@ -206,11 +229,11 @@ section .container button img {
 }
 
 .card-project h4 {
-    color: var(--primary);
-    text-transform: uppercase;
+  color: var(--primary);
+  text-transform: uppercase;
 }
 .project-container {
-  padding:  0 3rem;
+  padding: 0 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -226,21 +249,21 @@ section .container button img {
 }
 
 .card-project h4,
-.capt, a {
+.capt,
+a {
   margin: 0.5rem 1.5rem;
 }
 
-.card-project .link{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.card-project .link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-
-.card-project .link a{
-    color: var(--seccondary);
-    padding-top: 1rem;
-    text-decoration:underline;
+.card-project .link a {
+  color: var(--seccondary);
+  padding-top: 1rem;
+  text-decoration: underline;
 }
 
 .card-project img {
@@ -248,7 +271,106 @@ section .container button img {
   object-fit: cover;
 }
 
+/*Contact Section  */
 
+.header-contact h1 {
+  font-size: 2rem;
+  padding: 4rem;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-contact {
+  text-align: center;
+}
+
+.more-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.more-info {
+  color: var(--primary);
+}
+
+.sosmed-icon a {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.form-contact {
+  width: 475px;
+  height: 475px;
+}
+
+input,
+textarea {
+  background-color: #cec8f4;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid#7562E0;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #282944;
+}
+
+textarea {
+  height: 90px;
+}
+
+/* footer */
+footer {
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p {
+  display: inline;
+  padding-left: 1rem;
+}
+
+footer a {
+  font-size: 2rem;
+}
+
+footer span {
+  background-color: #a3a2a2;
+  width: 80%;
+  height: 2px;
+  display: inline-block;
+  margin: auto;
+  display: flex;
+  margin-top: 2rem;
+}
 
 /* responsif Breakpoints */
 
@@ -325,5 +447,29 @@ section .container button img {
 
   .container-icon img {
     width: 50%;
+  }
+
+  /* contact  */
+  .contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  form {
+    width: 60%;
+    margin: auto;
+  }
+
+  .footer-container{
+    flex-direction: column;
+  }
+
+  .footer-logo img {
+    width: 30%;
+    justify-content: center;
+    margin-left: 1rem;
   }
 }
