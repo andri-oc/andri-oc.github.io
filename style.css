@@ -18,7 +18,6 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  height: 3000px;
 }
 
 h1 {
@@ -303,8 +302,8 @@ a {
 }
 
 .form-contact {
-  width: 475px;
   height: 475px;
+  width: 30%;
 }
 
 input,
@@ -433,10 +432,12 @@ footer span {
   }
 
   section .container .btn {
-    display: inline;
+    display:
+     inline;
   }
+
   .about-container {
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
     text-align: center;
   }
   /* About */
@@ -467,7 +468,7 @@ footer span {
     justify-content: center;
   }
 
-  form {
+  .form-contact {
     width: 60%;
     margin: auto;
   }
