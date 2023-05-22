@@ -27,12 +27,14 @@ h1 {
 p {
   color: var(--seccondary);
 }
+
 section {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 nav {
   display: flex;
   background-color: #ffff;
+  position: relative;
   justify-content: space-around;
   padding: 1rem 0;
   align-items: center;
@@ -136,13 +138,17 @@ section .container .btn {
   border: none;
   background-color: var(--primary);
   color: #ffff;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   font-size: 1rem;
   align-items: center;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
 }
-section .container button img {
-  width: 1rem;
+section .container .btn:hover {
+  background-color: #1c1e44;
+}
+section .container .btn:focus {
+  background-color: #15162c;
 }
 
 /* About Me */
@@ -165,26 +171,34 @@ section .container button img {
 }
 
 .header-education h1 {
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 2rem;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .education-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5rem;
-    color: var(--seccondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  color: var(--seccondary);
 }
 
-.education-detail span {
-    padding: 2px 20px;
-    border-radius: 20px;
-    background-color: #cec8f4;
+.education-detail a {
+  margin: 10px 0;
+  padding: 5px 2rem;
+  background-color: #cec8f4;
+  color: var(--primary);
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+
+.education-detail a:hover {
+  background-color: var(--primary);
+  color: white;
 }
 .education-container img {
-    width: 15px;
-    margin-right:1rem;
+  width: 15px;
+  margin-right: 1rem;
 }
 
 /* Skill section */
@@ -218,7 +232,6 @@ section .container button img {
   margin: auto;
   width: 100px;
 }
-
 /* section project */
 .header-project {
   text-align: center;
@@ -397,14 +410,15 @@ footer span {
     height: 50vh;
     align-items: center;
     justify-content: space-evenly;
-    z-index: -1;
-    border-radius: 0 0 0 20px;
+    z-index: 1;
+    border-radius: 20px;
     transform: translateX(100%);
     transition: all 0.5s;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
   }
 
   nav ul.slide {
+
     transform: translateX(0);
   }
 
@@ -432,8 +446,7 @@ footer span {
   }
 
   section .container .btn {
-    display:
-     inline;
+    display: inline;
   }
 
   .about-container {
@@ -445,13 +458,16 @@ footer span {
   .education-container {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+  }
+  .about-container {
     padding: 0 1rem;
-}
-
+  }
   /* Skill */
 
   .container-icon {
-    width: 30%;
+    width: 50%;
+    /* height: 50%; */
     flex-wrap: wrap;
   }
 
@@ -473,7 +489,7 @@ footer span {
     margin: auto;
   }
 
-  .footer-container{
+  .footer-container {
     flex-direction: column;
   }
 
@@ -482,6 +498,4 @@ footer span {
     justify-content: center;
     margin-left: 1rem;
   }
-
-
 }
