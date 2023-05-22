@@ -8,6 +8,8 @@
     <title>My Portfolio</title>
     <!-- icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- animate scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +48,7 @@
     <main>
         <section id="hero">
             <div class="container">
-                <div class="hero-title">
+                <div class="hero-title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <aside>
                         <h1>Hello, 👋</h1>
                         <h1>My name Andre</h1>
@@ -56,7 +58,7 @@
                     </aside>
 
                 </div>
-                <div class="hero-image">
+                <div class="hero-image" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <img src="./asset/profile.png" alt="profile-andre">
                     </aside>
                 </div>
@@ -68,40 +70,43 @@
             <article>
                 <aside>
                     <div class="about-container">
-                        <div class="about-title">
+                        <div class="about-title" data-aos="fade-down" data-aos-duration="1000">
                             <h1>About Me</h1>
                             <p>About, My Purpose and my education</p>
                         </div>
-                        <p>Saya mahasiswa Universitas Islam Kalimantan Muhammad Arsyad Al-banjari
-                        jurusan teknik informatika, Memilih karir sebagai front end developer,
-                        Saya Mengikuti pelatihan dari Dicoding dalam program jaringan komputer,
-                        dev ops, pengembang web frontend, dan Desain UI/UX untuk mendukung pengetahuan saya
-                        dan keterampilan dalam Desain UI/UX dan membuat portofolio Studi Kasus sehingga saya menjadi
-                        Konsisten dalam mengembangkan website.</p>
+                        <p data-aos="fade-down" data-aos-duration="1500">Saya mahasiswa Universitas Islam Kalimantan
+                            Muhammad Arsyad Al-banjari
+                            jurusan teknik informatika, Memilih karir sebagai front end developer,
+                            Saya Mengikuti pelatihan dari Dicoding dalam program jaringan komputer,
+                            dev ops, pengembang web frontend, dan Desain UI/UX untuk mendukung pengetahuan saya
+                            dan keterampilan dalam Desain UI/UX dan membuat portofolio Studi Kasus sehingga saya menjadi
+                            Konsisten dalam mengembangkan website.</p>
                     </div>
                 </aside>
             </article>
             <article>
                 <aside>
-                    <div class="header-education">
+                    <div class="header-education" data-aos="fade-down" data-aos-duration="1000">
                         <h1>Education</h1>
                     </div>
                     <div class="education-container">
-                        <div class="education-experience">
-                            <span><img src="./asset/icon/graduation.svg" alt="logo-graduation">UNISKA BANJARMASIN</span><br>
+                        <div class="education-experience" data-aos="flip-up" data-aos-duration="800">
+                            <span><img src="./asset/icon/graduation.svg" alt="logo-graduation">UNISKA
+                                BANJARMASIN</span><br>
                             <b>TEKNIK INFORMATIKA</b>
                         </div>
-                        <div class="education-detail">
+                        <div class="education-detail" data-aos="flip-up" data-aos-duration="800">
                             <span>More</span>
-                            <p><i class="ri-arrow-right-s-line"> aug 2021 - 2025</i></p>
+                            <p><i class="ri-arrow-right-s-line" data-aos="flip-up" data-aos-duration="800"> aug 2021 -
+                                    2025</i></p>
                         </div>
                     </div> <br>
                     <div class="education-container">
-                        <div class="education-experience">
+                        <div class="education-experience" data-aos="flip-up" data-aos-duration="800">
                             <span><img src="./asset/icon/graduation.svg" alt="logo-graduation">SMKN 3 SAMPIT</span><br>
                             <b>MULTIMEDIA</b>
                         </div>
-                        <div class="education-detail">
+                        <div class="education-detail" data-aos="flip-up" data-aos-duration="800">
                             <span>More</span>
                             <p><i class="ri-arrow-right-s-line"> aug 2018 - 2021</i></p>
                         </div>
@@ -114,41 +119,41 @@
         <section id="skill">
             <article>
                 <div class="skill-container">
-                    <div class="header-skill">
+                    <div class="header-skill" data-aos="fade-down" data-aos-duration="1000">
                         <h1>Skill & tools</h1>
                         <p>Technologies I've been working with recently</p>
                     </div>
                     <div class="skill-icon">
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/html.svg" alt="logo-html">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/css.svg" alt="logo-css">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/js.svg" alt="logo-javascript">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/react.svg" alt="logo-rect-js">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/bootstrap.svg" alt="logo-bootstrap">
                         </div>
                     </div>
                     <div class="skill-icon">
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/tailwind.svg" alt="logo-tailwind-css">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/sass.svg" alt="logo-sas">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/git.svg" alt="logo-git">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/github-icon-black.svg" alt="logo-github">
                         </div>
-                        <div class="container-icon">
+                        <div class="container-icon" data-aos="flip-up" data-aos-duration="800">
                             <img src="./asset/icon/vscode.svg" alt="logo-vscode">
                         </div>
                     </div>
@@ -159,23 +164,26 @@
         <!-- section Project -->
         <section id="project">
             <article>
-                <div class="header-project">
+                <div class="header-project"data-aos="fade-down" data-aos-duration="1000">
                     <h1>Project</h1>
                     <p>Things I'sve built so far</p>
                 </div>
                 <div class="project-container">
-                    <div class="card-project">
+                    <div class="card-project" data-aos="fade-down" data-aos-duration="800">
                         <img src="./asset/project1.png" alt="project-portfolio">
                         <h4>Project Simple Portfolio</h4>
-                        <p class="capt">Membuat website portfolio sederhana menggunakan html, css, dan JavaScript<br><br>
+                        <p class="capt">Membuat website portfolio sederhana menggunakan html, css, dan
+                            JavaScript<br><br>
                             <b> stack :</b> HTML , JavaScript, css
                         </p>
                         <div class="link">
-                            <a href="https://github.com/andri-io/website-simple-portfolio"><i class="ri-link-m"></i>live preview</a>
-                            <a href="https://github.com/andri-io/website-simple-portfolio"><i class="ri-github-fill"></i>View Code</a>
+                            <a href="https://github.com/andri-io/website-simple-portfolio"><i class="ri-link-m"></i>live
+                                preview</a>
+                            <a href="https://github.com/andri-io/website-simple-portfolio"><i
+                                    class="ri-github-fill"></i>View Code</a>
                         </div>
                     </div>
-                    <div class="card-project">
+                    <div class="card-project" data-aos="fade-down" data-aos-duration="800">
                         <img src="./asset/project2.png" alt="project-landing-page">
                         <h4>Landing page</h4>
                         <p class="capt">Membuat website landing page dan paralax efect menggunakan materialize <br><br>
@@ -186,28 +194,32 @@
                             <a href=""><i class="ri-github-fill"></i>View Code</a>
                         </div>
                     </div>
-                    <div class="card-project">
+                    <div class="card-project" data-aos="fade-down" data-aos-duration="800">
                         <img src="./asset/project3.png" alt="project-sistem-informasi-mahasiswa">
                         <h4>Sistem Informasi Data Mahasiswa</h4>
                         <p class="capt">aplikasi web Sistem informasi Mahasiswa, menggunakan framework bootstrap<br><br>
                             <b> stack :</b> HTML , JavaScript, bootstrap, php
                         </p>
                         <div class="link">
-                            <a href="https://github.com/andri-io/sistem-informasi-data-mahasiswa-"><i class="ri-link-m"></i>live preview</a>
-                            <a href="https://github.com/andri-io/sistem-informasi-data-mahasiswa-"><i class="ri-github-fill"></i>View Code</a>
+                            <a href="https://github.com/andri-io/sistem-informasi-data-mahasiswa-"><i
+                                    class="ri-link-m"></i>live preview</a>
+                            <a href="https://github.com/andri-io/sistem-informasi-data-mahasiswa-"><i
+                                    class="ri-github-fill"></i>View Code</a>
                         </div>
                     </div>
-                    <div class="card-project">
+                    <div class="card-project" data-aos="fade-down" data-aos-duration="800">
                         <img src="./asset/project4.png" alt="code-landing-page">
                         <h4>Code Landing page</h4>
                         <p class="capt">Landing page professional portfolio, menggunakan html dan css<br><br>
                             <b> stack :</b> HTML, Css
                         <div class="link">
-                            <a href="https://github.com/andri-io/code-landing-page"><i class="ri-link-m"></i>live preview</a>
-                            <a href="https://github.com/andri-io/code-landing-page"><i class="ri-github-fill"></i>View Code</a>
+                            <a href="https://github.com/andri-io/code-landing-page"><i class="ri-link-m"></i>live
+                                preview</a>
+                            <a href="https://github.com/andri-io/code-landing-page"><i class="ri-github-fill"></i>View
+                                Code</a>
                         </div>
                     </div>
-                    <div class="card-project">
+                    <div class="card-project" data-aos="fade-down" data-aos-duration="800">
                         <img src="./asset/project5.png" alt="proejct-form-login">
                         <h4>Form login</h4>
                         <p class="capt">Membuat form login menggunakan html dan css<br><br>
@@ -218,7 +230,7 @@
                             <a href="https://github.com/andri-io/form-login"><i class="ri-github-fill"></i>View Code</a>
                         </div>
                     </div>
-                    <div class="card-project">
+                    <div class="card-project" data-aos="fade-down" data-aos-duration="800">
                         <img src="./asset/project6.png" alt="project-portfolio">
                         <h4>Portfolio</h4>
                         <p class="capt">website portfolio menggunakan bootstrap5 <br><br>
@@ -234,12 +246,12 @@
         <!-- contact section -->
         <section id="Contact">
             <article>
-                <div class="header-contact">
+                <div class="header-contact" data-aos="fade-down" data-aos-duration="1200">
                     <h1>Contact</h1>
                 </div>
                 <div class="contact-container">
                     <aside class="more-info">
-                        <div class="more-info-container">
+                        <div class="more-info-container" data-aos="fade-down" data-aos-duration="1200">
                             <h3>Connect with me!</h3>
                             <p>contact me</p>
                             <div class="sosmed-icon">
@@ -249,15 +261,17 @@
                             </div>
                         </div>
                     </aside>
-                
-                        <div class="form-contact">
-                            <form action="">
-                                <input type="text" id="name" name="firstname" placeholder="Name">
-                                <input type="text" id="email" placeholder="Email">
-                                <textarea id="subject" name="subject" placeholder="Message"></textarea>
+
+                    <div class="form-contact" data-aos="fade-down" data-aos-duration="1200">
+                        <form action="">
+                            <input type="text" id="name" name="firstname" placeholder="Name">
+                            <input type="text" id="email" placeholder="Email">
+                            <textarea id="subject" name="subject" placeholder="Message"></textarea>
+                            <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                                 <button>Submit</button>
-                            </form>
-                        </div>                    
+                    </div>
+                    </form>
+                </div>
                 </div>
             </article>
         </section>
@@ -282,6 +296,11 @@
     </main>
 
     <script src="index.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
